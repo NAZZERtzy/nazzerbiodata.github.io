@@ -1,0 +1,141 @@
+/* Reset dan dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif,Playfair Display;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  scroll-behavior: smooth; /* agar scroll halus saat klik menu */
+}
+
+/* Navigasi */
+nav {
+  background-color: #333;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold,Playfair Display;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #00bcd4;
+}
+
+/* Header Profil */
+.profil {
+  text-align: center;
+  margin-top: 80px;
+  padding: 40px 20px;
+}
+
+.foto-profil {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #db1212;
+  margin-bottom: 15px;
+}
+
+.profil h1 {
+  font-size: 2em;
+  color: #222;
+}
+
+.profil p {
+  color: #555;
+  font-size: 1.1em;
+}
+
+/* Setiap Section */
+.section {
+  width: 80%;
+  margin: 60px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+/* Galeri Foto */
+.foto-galeri {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.foto-galeri img {
+  width: 30%;
+  border-radius: 20px;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.foto-galeri img:hover {
+  transform: scale(1.05);
+}
+
+/* Hobi */
+.daftar-hobi {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.daftar-hobi li {
+  background-color: #00bcd4;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Kontak */
+#kontak a {
+  color: #00bcd4;
+  text-decoration: none;
+}
+
+#kontak a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  margin-top: 40px;
+}
